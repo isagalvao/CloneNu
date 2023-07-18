@@ -6,6 +6,11 @@
 
 <img src="\CloneNu\CloneNu\HomePage.png" alt="Tela">
 
+## Descrição
+
+- Projeto em desenvolvimento.
+- Projeto sendo realizado com intuito de melhorar meu desempenho com desenvolvimento Mobile e Xamarin forms.
+  
 ## 🤝 Colaboradores
 
 <table>
