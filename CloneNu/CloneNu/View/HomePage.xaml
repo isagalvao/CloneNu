@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CloneNu.MainPage">
+             x:Class="CloneNu.HomePage">
 
     <ScrollView>
         <Grid>
@@ -9,7 +9,7 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <StackLayout Grid.Row="0" BackgroundColor="#820ad1" Padding="20" Spacing="20">
+            <StackLayout Grid.Row="0" BackgroundColor="#820ad1" Padding="20" Spacing="10">
                 <StackLayout Orientation="Horizontal">
                     <ImageButton HeightRequest="50" 
                                  WidthRequest="50" 
@@ -36,30 +36,33 @@
                                  CornerRadius="50"
                                  Source="email.png"
                                  Padding="10"/>
-                </StackLayout>
+                </StackLayout >
                 <Label Text="Olá, Pedro Henrique"
                        FontAttributes="Bold"
                        FontSize="20" 
                        TextColor="White"
                        HorizontalOptions="StartAndExpand"/>
-                <ImageButton Source="pedacinho.png"
-                                 HeightRequest="200"
-                             WidthRequest="500"
-                                 CornerRadius="15" 
-                                 HorizontalOptions="CenterAndExpand"/>
-                <Button HorizontalOptions="Start" 
-                        Text="Eu quero" 
-                        BackgroundColor="White" 
-                        TextColor="Black" 
-                        FontAttributes="Bold" 
-                        CornerRadius="15"/>
+                <AbsoluteLayout >
+                    <Frame CornerRadius="30" HasShadow="False" Padding="0" BackgroundColor="Transparent"
+                           AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+                    <Image Source="pedacinho.png"
+                            HeightRequest="200"/>
+                    </Frame>
+                    <Button Text="Eu quero!"
+                             Clicked="Button_Clicked"
+                             BackgroundColor="#820ad1"
+                             CornerRadius="50"
+                            TextColor="White"
+                             AbsoluteLayout.LayoutBounds="0.1 ,0.5,95,40"
+                             AbsoluteLayout.LayoutFlags="PositionProportional" />
+                </AbsoluteLayout>
             </StackLayout>
             <StackLayout Grid.Row="1" Padding="20" Spacing="20">
                 <Label Text="Conta" 
                        TextColor="Black" 
-                       FontSize="24"
+                       FontSize="22"
                        FontAttributes="Bold"/>
-                <Label Text="R$ 0,00" TextColor="Black" FontSize="24" FontAttributes="Bold"/>
+                <Label Text="R$ 0,00" TextColor="Black" FontSize="22" FontAttributes="Bold"/>
                 <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
                     <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Padding="5" Spacing="15">
                         <StackLayout>
@@ -175,7 +178,8 @@
                         ImageSource="card.png" 
                         ContentLayout="Left,0" 
                         Padding="20, 10, 190, 10"
-                        Margin="0, 15, 0, 0"/>
+                        Margin="0, 15, 0, 0"
+                         TextTransform="None"/>
 
                 <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
                     <StackLayout Orientation="Horizontal" Padding="5" Spacing="7">

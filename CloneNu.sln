@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloneNu.Android", "CloneNu\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloneNu.iOS", "CloneNu\CloneNu.iOS\CloneNu.iOS.csproj", "{93679041-BEFB-4F60-8F67-46EB9F9B506E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloneNu", "CloneNu\CloneNu\CloneNu.csproj", "{E1BF3F60-C545-4EA5-8E26-A46DF8284B2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloneNu", "CloneNu\CloneNu\CloneNu.csproj", "{E1BF3F60-C545-4EA5-8E26-A46DF8284B2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
