@@ -1,11 +1,10 @@
-# CloneNu
+# CloneNu - Xamarin Forms
 
 ### `Processo de criação do projeto:`
 
-- [x] projeto comintuito de melhorar  meu desempenho com Xamarin forms;
 - [x] Criação estilo Xaml;
 
-<img src="HomePage.png" alt="Tela">
+<img src="\CloneNu\CloneNu\HomePage.png" alt="Tela">
 
 ## 🤝 Colaboradores
 
